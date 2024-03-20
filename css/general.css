@@ -175,7 +175,7 @@ body {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
   padding: 1.2rem 2.8rem;
   border-radius: 6px;
@@ -200,7 +200,7 @@ body {
 .btn--outline:link,
 .btn--outline:visited {
   background-color: #fff;
-  color: #555;
+  color: #0090f1;
 }
 
 .btn--outline:hover,

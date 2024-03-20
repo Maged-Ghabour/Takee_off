@@ -3,9 +3,6 @@
 /**************************/
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: transparent;
 
   /* Because we want header to be sticky later */
@@ -14,16 +11,54 @@
   position: relative;
 
   position: absolute;
-  top: 0;
+  top: 1rem;
   bottom: 0;
   width: 100%;
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-
   z-index: 999;
 }
 
+.header .bottom__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .top__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.header .top__header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.header .top__header ul li {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.header .top__header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.header .top__header ul li:not(:last-child) {
+  border-left: 1px solid #fff;
+}
+.location_icon,
+.mail_icon,
+.call_icon {
+  font-size: 2rem;
+  color: #fff;
+}
 .logo {
   height: 5.2rem;
 }
@@ -45,7 +80,7 @@
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   transition: all 0.3s;
 }
 
@@ -60,6 +95,11 @@
   border-radius: 4px;
   color: #fff;
   border: 1px solid #fff;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -104,7 +144,7 @@
 
 .section-hero {
   background: url(../img/hero.png);
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 9.6rem 0 4.6rem 0;
   background-size: cover;
   height: 100vh;
   display: flex;
