@@ -82,6 +82,11 @@
   font-weight: 500;
   font-size: 1.6rem;
   transition: all 0.3s;
+  padding-bottom: 1rem;
+}
+
+.main-nav-link.active {
+  border-bottom: 1px solid #fff;
 }
 
 .main-nav-link:hover,
@@ -95,6 +100,7 @@
   border-radius: 4px;
   color: #fff;
   border: 1px solid #fff;
+
   font-size: 1.4rem;
   display: flex;
   justify-content: center;
@@ -193,20 +199,6 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-.about-us .btn-linear {
-  text-decoration: none;
-  font-size: 2rem;
-  background: linear-gradient(90deg, #54b5f6, #0091f1);
-  color: #fff;
-  padding: 1.3rem 2rem;
-  border-radius: 6px;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: fit-content;
-  margin-top: 2rem;
-}
 /**********************************************/
 
 /**********************************************/
@@ -257,14 +249,14 @@
 }
 .switcher li {
   padding: 10px 15px;
-  font-weight: bold;
   cursor: pointer;
   background-color: #e6f4fe;
   min-width: 105px;
   text-align: center;
   transition: 0.2s;
   margin: 0.5rem 1rem;
-  border-radius: 9999px;
+  border-radius: 8px;
+  font-size: 1.6rem;
 }
 .switcher li.active,
 .switcher li:hover {
@@ -284,13 +276,59 @@
 }
 
 /*********************************************/
+/*********************************************/
+/* Banner */
+.banner {
+  background: url(../img/bannerBG.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem 0;
+}
+.banner .banner__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner .banner__content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.banner .banner__content p {
+  font-size: 2rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.banner .banner__content a {
+  width: fit-content;
+}
+
+.banner .banner_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.banner .banner_wrapper .banner__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner_wrapper .banner__image img {
+  max-width: 250px;
+}
+
+.banner .banner__content {
+  color: #fff;
+}
+/*********************************************/
 
 /***********************************************/
 /* our clients*/
 
 .our__clients {
   background: #e6f4fe;
-  margin: 2rem 0 0 0;
   padding: 3rem 0;
 }
 .our__clients a {
@@ -339,6 +377,81 @@
   line-height: 1.7;
   font-size: 1.2rem;
   text-align: right;
+}
+/***********************************************/
+
+/***********************************************/
+/*partenrs*/
+
+.partenrs {
+  padding: 2rem 0;
+}
+
+.partenrs .swiper-slide img {
+  filter: grayscale(100%);
+  opacity: 70%;
+  transition: all 0.3s;
+}
+.partenrs .swiper-slide img:hover {
+  filter: grayscale(0%);
+  opacity: 100%;
+}
+
+/***********************************************/
+
+/***********************************************/
+/* Contact Us*/
+.contact__us {
+  margin-bottom: 4rem;
+}
+
+.contact__us .contact__wrapper {
+  border: 1px solid #b0ddfb;
+  padding: 5rem;
+  border-radius: 8px;
+  /* position: relative; */
+  background-color: #fff;
+}
+.contact__us .contact__wrapper__parent {
+  padding: 2rem;
+  position: relative;
+}
+.contact__us .contact__wrapper__parent::before {
+  content: "";
+  position: absolute;
+  top: 81px;
+  width: calc(100% + 4rem);
+  height: 100%;
+  background: url(../img/fromCover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: -22px;
+  z-index: -22;
+}
+.contact__us .contact__form label {
+  font-size: 1.4rem;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact__us .contact__image {
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__us .btns {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.contact__us .btns span {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #333;
 }
 /***********************************************/
 

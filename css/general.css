@@ -23,15 +23,16 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: #e67e22
+- Primary: #0090f1
 - Tints:
-#fdf2e9
-#fae5d3
-#eb984e
+#e6f4fe
+#b3defb
+#4db1f5
 
 - Shades: 
-#cf711f
-#45260a
+#005691
+#3A86FF
+#003a60
 
 - Accents:
 - Greys
@@ -266,7 +267,7 @@ body {
   outline: none;
   /* outline: 4px dotted #e67e22; */
   /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.8rem #0091f12a;
 }
 
 /* HELPER/SETTINGS CLASSES */
@@ -297,4 +298,42 @@ strong {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 3.8rem;
+  color: #333;
+}
+
+/* Edit Bootstrap Framework */
+
+.form-control {
+  font-size: 1.8rem;
+}
+
+.form-control::placeholder {
+  font-size: 1.3rem;
+  color: #bbbbbb;
+}
+
+.btn-linear {
+  text-decoration: none;
+  background: linear-gradient(90deg, #54b5f6, #0091f1);
+  color: #fff;
+  padding: 1.3rem 2rem;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;
+  border: none;
+}
+.btn-outline-linear {
+  border: 1px solid #3a86ff;
+  font-size: 1.6rem;
+  padding: 1.3rem 2rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;
+  text-decoration: none;
+  color: #3a86ff;
 }
