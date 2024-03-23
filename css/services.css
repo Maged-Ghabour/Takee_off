@@ -1,0 +1,66 @@
+/* Start Breadcrumb */
+
+.breadcrumb {
+  margin-bottom: 0;
+  padding: 3rem 0;
+  background: url(../img/breadcrumb.png) center;
+  background-size: cover;
+}
+.breadcrumb .header__primary {
+  text-align: center;
+}
+.breadcrumb .breadcrumb__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.breadcrumb .breadcrumb__list li + li::before {
+  content: "/\00a0";
+}
+.breadcrumb .breadcrumb__list li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 60%);
+}
+
+/* End Breadcrumb*/
+
+/* Start Services Section */
+.all-services__section {
+  margin: 4rem 0;
+}
+
+.all-services__section .services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 2rem;
+}
+
+.all-services__section .services .service {
+  border: 1px solid #b0ddfb;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+.all-services__section .services .service .service__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.all-services__section .services .service .service__header h6 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.all-services__section .services .service .service__header img {
+  max-width: 30px;
+}
+.all-services__section .services .service .service__body p {
+  color: #888;
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+} /* End Services Section */
