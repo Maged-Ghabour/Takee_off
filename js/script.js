@@ -90,12 +90,12 @@ var swiper = new Swiper(".swiper", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
-    el: ".swiper-pagination7",
+    el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },

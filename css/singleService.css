@@ -1,0 +1,76 @@
+/* Start Service Bio*/
+.bio__service {
+  margin: 3rem 0;
+}
+.bio {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+.bio .bio__content .header__secondary {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.bio__content p {
+  font-size: 1.8rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.bio .bio__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio .bio__image img {
+  width: 350px;
+}
+/* End Bio Service */
+
+/* Start Advantage Service */
+.advantage__service {
+}
+.advantage__service .advantages .advantage {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.advantage__service .advantages .advantage h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.advantage__service .advantages .advantage p {
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.adavntage__wrapper .advantage__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adavntage__wrapper .advantage__image img {
+  width: 450px;
+}
+
+/* End  Advantage Service */
+/* Start CTA Section */
+.CTA {
+  margin: 3rem 0;
+}
+.CTA__content {
+  background-color: #0091f128;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* End CTA Section */
